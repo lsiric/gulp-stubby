@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Gulp Stubby</title>
+		<script type="text/javascript" src="./jquery/dist/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="hello-world">Hello world!</div>
+
+		<script type="text/javascript">
+
+			(function () {
+				
+				// trigger jquery GET to /hello url
+				$.get('/hello')
+				.success(onSuccess);
+
+				function onSuccess (response) {
+
+					// grab hello attribute, and inject it into div with class 'hello-world'
+					$('div.hello-world').text(response.hello);
+				}
+
+			})(); 			
+
+		</script>
+
+	</body>
+</html>

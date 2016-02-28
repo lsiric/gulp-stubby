@@ -1,0 +1,18 @@
+[
+  {
+    "request": {
+      "url": "/hello",
+      "method": "GET"
+    }, 
+    "response": {
+      "status": 200, 
+      "headers": {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }, 
+      "body": {
+        "hello": "Hello World from Stubby!"
+      }
+    }
+  }
+]
